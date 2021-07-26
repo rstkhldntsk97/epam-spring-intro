@@ -1,7 +1,6 @@
 package com.epam.spring.core;
 
-import com.epam.spring.core.beansIFace.BeanCollection;
-import com.epam.spring.core.config.AppConfig3;
+import com.epam.spring.core.cars.CarContainer;
 import com.epam.spring.core.config.MainConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -16,6 +15,6 @@ public class Main {
 
         System.out.println("-----------------------");
 
-        ctx.getBean(BeanCollection.class).getList().forEach(System.out::println);
+        ctx.getBean(CarContainer.class).printCars();
     }
 }
